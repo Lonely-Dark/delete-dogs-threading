@@ -5,11 +5,12 @@
 import threading
 import requests
 import time
+import asyncio 
 
 #Set conversation_id
 conversation_id=int(input('Set conversation_id: '))
 #Token:
-token='Token here'
+token=''
 
 def delete_dogs_friends(token):
 	#Get all friends
@@ -44,3 +45,5 @@ two.start()
 #Join threads to the main thread
 one.join()
 two.join()
+
+print('Work here')
